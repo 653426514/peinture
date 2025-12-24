@@ -93,7 +93,7 @@ export const PreviewStage: React.FC<PreviewStageProps> = ({
     const isLiveGenerating = currentImage?.videoStatus === 'generating';
 
     return (
-        <section className="relative w-full flex flex-col h-[360px] md:h-[480px] items-center justify-center bg-black/20 rounded-xl backdrop-blur-xl border border-white/10 shadow-2xl shadow-black/20 overflow-hidden relative group">
+        <section className="relative w-full flex flex-col h-[360px] md:h-[480px] items-center justify-center bg-white/5 rounded-xl backdrop-blur-xl border border-white/10 shadow-[0_20px_60px_-40px_rgba(0,0,0,0.8)] overflow-hidden relative group">
 
             {isWorking ? (
                 <div className="absolute inset-0 flex flex-col items-center justify-center z-10 bg-black/40 backdrop-blur-sm animate-in fade-in duration-500">

@@ -34,8 +34,8 @@ export const Header: React.FC<HeaderProps> = ({
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
   return (
-    <header className="w-full backdrop-blur-md sticky top-0 z-50 bg-background-dark/30 border-b border-white/5">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-2 py-3 md:px-8 md:py-4 relative">
+    <header className="w-full backdrop-blur-md sticky top-0 z-50 bg-[#05070d]/80 border-b border-white/10 shadow-sm">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-3 py-3 md:px-8 md:py-4 relative">
         
         {/* Logo & Title - Visible on all devices */}
         <div className="flex items-center gap-2 text-white shrink-0">
@@ -101,7 +101,7 @@ export const Header: React.FC<HeaderProps> = ({
 
         {/* Desktop: Sliding Pill Navigation (Centered) */}
         <div className="hidden md:block absolute left-1/2 -translate-x-1/2">
-            <div className="relative flex items-center bg-black/20 border border-white/10 rounded-full p-1 w-[300px]">
+            <div className="relative flex items-center bg-white/5 border border-white/10 rounded-full p-1 w-[300px] shadow-[0_10px_40px_-30px_rgba(0,0,0,0.8)]">
                 {/* Background Sliding Pill */}
                 <div 
                     className={`absolute top-1 bottom-1 rounded-full bg-purple-600 shadow-lg shadow-purple-900/30 transition-all duration-300 ease-out z-0 w-[calc(33.33%-4px)]
@@ -145,7 +145,7 @@ export const Header: React.FC<HeaderProps> = ({
           <Tooltip content={t.sourceCode} position="bottom">
               <a
                 href="https://github.com/Amery2010/peinture"
-                className="flex items-center justify-center p-2 rounded-lg text-white/70 hover:text-purple-400 hover:bg-white/10 transition-all active:scale-95"
+                className="flex items-center justify-center p-2 rounded-lg text-white/70 hover:text-white hover:bg-white/10 border border-white/5 transition-all active:scale-95"
                 target="_blank"
               >
                 <Github className="w-5 h-5" />
@@ -155,7 +155,7 @@ export const Header: React.FC<HeaderProps> = ({
           <Tooltip content={t.help} position="bottom">
               <button
                 onClick={onOpenFAQ}
-                className="flex items-center justify-center p-2 rounded-lg text-white/70 hover:text-green-400 hover:bg-white/10 transition-all active:scale-95"
+                className="flex items-center justify-center p-2 rounded-lg text-white/70 hover:text-white hover:bg-white/10 border border-white/5 transition-all active:scale-95"
               >
                 <CircleHelp className="w-5 h-5" />
               </button>
@@ -164,7 +164,7 @@ export const Header: React.FC<HeaderProps> = ({
           <Tooltip content={t.settings} position="bottom">
               <button
                 onClick={onOpenSettings}
-                className="flex items-center justify-center p-2 rounded-lg text-white/70 hover:text-purple-400 hover:bg-white/10 transition-all active:scale-95"
+                className="flex items-center justify-center p-2 rounded-lg text-white/70 hover:text-white hover:bg-white/10 border border-white/5 transition-all active:scale-95"
               >
                 <Settings className="w-5 h-5" />
               </button>
