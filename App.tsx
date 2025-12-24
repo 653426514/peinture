@@ -1166,7 +1166,7 @@ export default function App() {
                 {/* Left Column: Controls */}
                 <aside className="w-full md:max-w-sm flex-shrink-0 flex flex-col gap-4 md:gap-6">
                     <div className="flex-grow space-y-4 md:space-y-6">
-                    <div className="relative z-10 bg-black/20 p-4 md:p-6 rounded-xl backdrop-blur-xl border border-white/10 flex flex-col gap-4 md:gap-6 shadow-2xl shadow-black/20">
+                    <div className="relative z-10 bg-white/5 p-4 md:p-6 rounded-xl backdrop-blur-xl border border-white/10 flex flex-col gap-4 md:gap-6 shadow-[0_20px_60px_-40px_rgba(0,0,0,0.8)]">
                         
                         {/* Prompt Input Component */}
                         <PromptInput 
@@ -1205,7 +1205,7 @@ export default function App() {
                         <button 
                             onClick={handleGenerate}
                             disabled={isWorking || !prompt.trim() || isTranslating}
-                            className="group relative flex-1 flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-4 text-white text-lg font-bold leading-normal tracking-[0.015em] transition-all shadow-lg shadow-purple-900/40 generate-button-gradient hover:shadow-purple-700/50 disabled:opacity-70 disabled:cursor-not-allowed disabled:grayscale"
+                            className="group relative flex-1 flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-4 text-sm font-semibold leading-normal tracking-[0.01em] transition-all bg-white text-slate-950 shadow-[0_10px_40px_-24px_rgba(0,0,0,0.7)] border border-white/30 hover:-translate-y-0.5 hover:shadow-[0_18px_60px_-28px_rgba(0,0,0,0.85)] disabled:opacity-60 disabled:cursor-not-allowed"
                         >
                             {isLoading || isTranslating ? (
                             <div className="flex items-center gap-2">
